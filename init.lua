@@ -53,6 +53,14 @@ vim.keymap.set('n', 'H', function()
   vim.fn.VSCodeNotify('workbench.action.previousEditorInGroup')
 end, { desc = '上一个tab' })
 
+vim.keymap.set('n', 'p', function()
+  vim.fn.VSCodeNotify('workbench.action.pinEditor')
+end, { desc = '固定编辑器' })
+
+vim.keymap.set('n', 'P', function()
+  vim.fn.VSCodeNotify('workbench.action.pinEditor')
+end, { desc = '取消固定编辑器' })
+
 vim.keymap.set('n', '<leader>bx', function()
   vim.fn.VSCodeNotify('workbench.action.closeOtherEditors')
 end, { desc = '关闭多余的编辑器' })
