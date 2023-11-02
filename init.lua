@@ -58,7 +58,7 @@ vim.keymap.set('n', 'p', function()
 end, { desc = '固定编辑器' })
 
 vim.keymap.set('n', 'P', function()
-  vim.fn.VSCodeNotify('workbench.action.pinEditor')
+  vim.fn.VSCodeNotify('workbench.action.unpinEditor')
 end, { desc = '取消固定编辑器' })
 
 vim.keymap.set('n', '<leader>bx', function()
