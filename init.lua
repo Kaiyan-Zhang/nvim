@@ -75,7 +75,7 @@ end, { desc = '水平拆分编辑器' })
 
 -- search
 vim.keymap.set('n', '<leader>sf', function()
-  vim.fn.VSCodeNotify('workbench.action.quickOpen')
+  vim.fn.VSCodeNotify('workbench.action.replaceInFiles')
 end, { desc = '查找文件' })
 
 vim.keymap.set('n', '<leader>st', function()
