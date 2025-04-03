@@ -112,5 +112,8 @@ vim.keymap.set('n', '<leader>lf', function()
   vim.fn.VSCodeNotify('editor.action.formatDocument')
 end, { desc = '格式化文档' })
 
+vim.keymap.set('n', '<leader>/', function()
+  vim.fn.VSCodeNotify('editor.action.commentLine')
+end, { desc = '切换注释' })
 
 require("plug")
